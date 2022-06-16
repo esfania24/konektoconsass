@@ -13,24 +13,97 @@
   <script src="https://kit.fontawesome.com/64c58829ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-servicios">
+    <header id="encabezado"> 
+        
+        <a href="../index.html"><img  class="logo" src="../Imágenes/konektologolist.png" alt="KONEKTO" width="250mp=" height="80mp"></a>  
+            
+        <nav class="menú">
+            <ul>
+                <a href="../index.html"><li>Inicio</a></li>
+                <a href="../konekto/nosotros.html"><li>Nosotros</a></li>
+                <a href="../konekto/servicios.html"><li>Servicios</a></li> 
+                <a href="../konekto/bolsadetrabajo.html"><li>Bolsa de trabajo</a></li>
+                <a href="../konekto/contacto.html"><li>Contacto</a></li>
+            </ul>
+        </nav>
+    </header> 
+       
+<Section id="candidatos">
+    <div class="form">
+        <h1>Servicio para candidatos</h1>
+        <h3>Completá tus datos y adjunta tu CV</h3>
+        <form action="enviar.php" method="get" enctype="text/plane">
+            <div>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Nombre y apellido" class="casilla"> <!-- para completar con texto -->
+            </div>
+            <br>     
+            <div>
+                <label for="email"></label>
+                <input type="text" id="Email" placeholder="Email"required class="casilla">
+            </div>  
+            <br>
+            <div>
+                <label for="Teléfono"></label>
+                <input type="number" id="Teléfono" placeholder="Teléfono de contacto" class="casilla">
+            </div>
+            <br>
+            <div>
+                <label for="adjunto"> Adjuntar CV:</label> 
+                <input type="file" id="adjunto">
+            </div>
+            <br>
+            <div>
+                <LABEL for=""> Posibilidad para viajar</LABEL> 
+                <input type="radio" name="curso"value="1">SI
+                <input type="radio" name="curso" value="2">NO
+            </div>
+            <br>
+            <div>
+                <LABEL for=""> Posibilidad para cambiar de residencia</LABEL> 
+                <input type="radio" name="curso"value="1">SI
+                <input type="radio" name="curso" value="2">NO
+            </div>
+            <br>
+            <div>
+                <LABEL for=""> Preferencia</LABEL> 
+                <input type="radio" name="curso"value="1">TRABAJO REMOTO
+                <input type="radio" name="curso" value="2"> HIBRIDO
+                <input type="radio" name="curso" value="3"> PRESENCIAL
+            </div>
+            <br>
+            <div>
+                <LABEL for=""> Deseo recibir novedades sobre búsquedas que se adapten a mi perfil</LABEL> 
+                <input type="checkbox" id="acepto">          
+            </div>
+            <br>       
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar todo">
+            </div>
+        </form> 
+    </div>
+    <br>
+    <section class="entrevista">
+    <div class="ayuda">
+        <h3>Algunos tips para tu primera entrevisa laboral</h3>
+        <p> La primera entrevista de trabajo es un momento clave en el proceso de selección, ya que es un paso muy importante para convencer al entrevistador de que eres la persona idónea para el puesto de trabajo, y averiguar si el empleo al que optas cumple con tus aspiraciones personales y profesionales. Es por eso que queremos compartir con vos algunos tips que te serán de ayuda. </p>
+    </div>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/sS8a2ZM1cjQ" title="YouTube video player" frameborder="0" width="400mp=" height="200mp" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="ayuda1">
+        <h3>Como cerrar la entrevista</h3>
+        <p> Si estás interesado/a en la posición, pregunta cuál es el siguiente paso del proceso de entrevista. Si tu entrevistador/a te ofrece el puesto y lo quieres, acepta en el acto. Si por el contrario deseas tomarte un tiempo para pensar, sé cortés, ten tacto y pregunta sobre cuándo tendrías que darles una respuesta. Por último, no olvides de agradecerle a tu entrevistador/a el tiempo que te ha dedicado.   </p>
+    </div>
 
-        <div class="logo">
-              <h2>konekto</h2>
-        </div> 
+    </section>
+    
 
-        <div class="menu">
-            <nav class="menú">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="../konekto/servicios.html">Servicios</a></li> 
-                    <li><a href="./konekto/candidatos.html">Bolsa de trabajo</a></li>
-                    <li><a href="./konekto/contacto empresa.html">Contacto</a></li>
-                </ul>
-                </nav>  
-        </div>
- 
+    
+</Section>
+</body>
+
         
         <div class="pie">
                 <div class="derechos">

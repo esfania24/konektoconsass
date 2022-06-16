@@ -16,24 +16,64 @@
   <script src="https://kit.fontawesome.com/64c58829ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-servicios">
+    <header id="encabezado"> 
+        <a href="../index.html"><img  class="logo" src="../Imágenes/konektologolist.png" alt="KONEKTO" width="250mp=" height="80mp"></a>      
+        <nav class="menú">
+            <ul>
+                <a href="../index.html"><li>Inicio</a></li>
+                <a href="../konekto/nosotros.html"><li>Nosotros</a></li>
+                <a href="../konekto/servicios.html"><li>Servicios</a></li> 
+                <a href="../konekto/bolsadetrabajo.html"><li>Bolsa de trabajo</a></li>
+                <a href="../konekto/contacto.html"><li>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section id="contacto">
+        <h1>Servicio para empresas</h1>
+        <h3>Completá tus datos para recibir asesoramiento personalizado</h3>
+        <form action="enviar.php" method="get" enctype="text/plane">
+            <div>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Nombre y apellido" width="100%"> <!-- para completar con texto -->
+            </div>
+            <br>     
+            <div>
+                <label for="email"></label>
+            <input type="text" id="email" placeholder="Email"required>
+            </div>  
+            <br>
+            <div>
+                <label for="Teléfono"> </label>
+                <input type="number" id="Teléfono" placeholder="Teléfono de contacto">
+            </div>
+            <br>
+            <div>
+                <label for="Empresa"></label> 
+                <input type="text" id="Empresa" placeholder="Empresa">
+            </div>
+            <br>
+            <div>
+                <label for="Cargo"></label> 
+                <input type="text" id="Cargo" placeholder="Cargo">
+            </div>
+            <br>
+            <div>         
+                <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <br>       
+            <div>
+                <LABEL for=""> Deseo recibir mas novedades</LABEL> 
+                <input type="checkbox" id="acepto">          
+            </div>
+            <br>       
+            <div class="enviar">
+                <input type="submit" value="Quiero que me contacten">
+            </div>
+   
+        </form>
+    </section>  
+</body>
 
-        <div class="logo">
-              <h2>konekto</h2>
-        </div> 
-
-        <div class="menu">
-            <nav class="menú">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li> 
-                    <li><a href="./bolsadetrabajo.html">Bolsa de trabajo</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-                </nav>  
-        </div>
-        
 
         
         <div class="pie">

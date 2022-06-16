@@ -1,3 +1,58 @@
 $colorPrincipal:rgba(229, 166, 65, 0.988);
 $colorSecundario: rgba(130, 129, 126, 0.988);
 $colorPie: gainsboro;
+
+@each $background in white, black, grey {
+    .bg-#{$background} {
+        background-color:$background ;
+    }  
+}
+
+/* maps */
+$red-social:(
+    fb:blue,
+    tw:skyblue,
+    ig:violet,
+    in:blueviolet,
+);
+
+@each $nombre, $valor in $red-social {
+    .icon-#{$nombre} {
+        color:$valor;
+    }
+}
+
+$colores: (
+    base:rgba(130, 129, 126, 0.988),
+    principal:rgba(229, 166, 65, 0.988),
+    fondo:black,
+);
+
+.muestra-color {
+    background: map-get($colores, fondo);
+}
+
+/*extend*/
+
+.btn1 {
+    text-decoration: none;
+    color:black;
+}
+
+.btn1--mision {
+    @extend .btn1;
+    background-color:rgba(229, 166, 65, 0.988) ;
+
+}
+
+/*mixins*/
+@mixin texto {
+    padding: 10px;
+    border: 1px solid black;
+}
+.texto--color {
+    @include texto;
+    background-color: gainsboro;
+}
+  
+
